@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <style>
+            body { background-color: cadetblue}        
+        </style>
+    </head>
+    <body>
+            <h1 class="teste">Word Count</h1>
+            <a href="{% url 'about' % }">About</a>
+            <form action="{% url 'count' %}">
+                <textarea cols="40" rows="10" name="fulltext"></textarea>
+                <br/>
+                <input type="submit" value="Count!"/>
+            </form>
+    </body>
+</html>
